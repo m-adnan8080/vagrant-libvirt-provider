@@ -1,4 +1,5 @@
 ENV['VAGRANT_DEFAULT_PROVIDER'] = 'libvirt'
+ENV['VAGRANT_NO_PARALLEL'] = 'yes'
 
 cluster = {
   "kmaster" => { :ip => "192.168.122.11", :mgmt_mac => "52:54:00:15:63:c1", :mem => 2048, :cpu => 2 },
