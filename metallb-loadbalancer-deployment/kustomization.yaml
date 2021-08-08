@@ -2,5 +2,6 @@
 namespace: metallb-system
 
 resources:
+  - metallb-ns.yaml
   - metallb-deployment.yaml
   - metallb-configmap.yaml
