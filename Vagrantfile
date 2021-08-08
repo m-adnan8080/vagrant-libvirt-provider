@@ -3,8 +3,8 @@ ENV['VAGRANT_NO_PARALLEL'] = 'yes'
 
 cluster = {
   "kmaster" => { :ip => "192.168.122.11", :mgmt_mac => "52:54:00:15:63:c1", :mem => 2048, :cpu => 2 },
-  "worker1" => { :ip => "192.168.122.12", :mgmt_mac => "52:54:00:15:63:c2", :mem => 2048, :cpu => 2 },
-  "worker2" => { :ip => "192.168.122.13", :mgmt_mac => "52:54:00:15:63:c3", :mem => 2048, :cpu => 2 },
+  "node1" => { :ip => "192.168.122.12", :mgmt_mac => "52:54:00:15:63:c2", :mem => 2048, :cpu => 2 },
+  "node2" => { :ip => "192.168.122.13", :mgmt_mac => "52:54:00:15:63:c3", :mem => 2048, :cpu => 2 },
 }
 
 #system("virsh net-update default add ip-dhcp-host \"<host mac='52:54:00:15:63:c1' ip='192.168.122.11' />\" --live --config")
